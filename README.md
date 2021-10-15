@@ -1,9 +1,11 @@
 # Reinforcement Learning -- Theoretical Introduction and Applications
 
-During my bachelor thesis at Karlsruhe Institute of Technology I introduced the theoretical aspects of Reinforcement Learning.
+During my bachelor thesis at Karlsruhe Institute of Technology I introduced the theoretical aspects of Reinforcement Learning, such as the _Markov Decision Process (MDP)_ .
 To amplify the theory I implemented RL algorithms that are foundamental in this area of study. Namely:
 * Value Iteration
 * Q-Learning
+
+Many further, complex algorithms, such as [_Deep Q-Networks (DQN)_](https://arxiv.org/pdf/1312.5602.pdf) are based on Q-Learning.
 
 ## Application :rocket:
 I applied Value Iteration and Q-Learning to the following 3x4 grid world to keep things simple.
@@ -18,4 +20,4 @@ The jupyter notebook `q_learning_pokemon` contains the Q-Learning algorithm to f
 
 The __return__ of each episode, i.e. the sum of rewards, can be seen in the following graph. The number of high return episodes increases with the number of episodes. The variance is due to how I implemented Q-Learning: In each episode, the agent starts at a random (valid) start state. Therefore, the path lengths varies. Thus the return varies, since each state transition costs 0.05 and the only terminal state yields a reward of 100.
 
-<img src="assets/pokemon-rewards-per-episode.png?raw=true" width="600" height="350">
+<img src="assets/pokemon-rewards-per-episode.png?raw=true" width="610" height="360">
