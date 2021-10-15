@@ -20,4 +20,4 @@ The jupyter notebook `q_learning_pokemon` contains the Q-Learning algorithm to f
 
 The __return__ of each episode, i.e. the sum of rewards, can be seen in the following graph. The number of high return episodes increases with the number of episodes. The variance is due to how I implemented Q-Learning: In each episode, the agent starts at a random (valid) start state. Therefore, the path lengths varies. Thus the return varies, since each state transition costs 0.05 and the only terminal state yields a reward of 100.
 
-<img src="assets/pokemon-rewards-per-episode.png?raw=true" width="610" height="360">
+<img src="assets/pokemon-rewards-per-episode.png?raw=true" width="600" height="360">
